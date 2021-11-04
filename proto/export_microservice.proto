@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+service AnalyticsExportService {
+    rpc GetExport(Exports.GetRequest) returns (Exports.GetResponse) {}
+}
+
+message Exports {
+    message GetRequest {
+        string message = 1;
+    }
+
+    message GetResponse {
+        string message = 2;
+    }
+}
