@@ -1,0 +1,39 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  dockerize:
+    name: Dockerize
+    # if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          submodules: recursive
+          token: ${{ secrets.PAT }}
+
+      - name: Docker registry logging in
+        uses: docker/login-action@master
+        with:
+          registry: ${{ secrets.REGISTRY_URL }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Build and push
+        run: docker build -t ${{ secrets.REGISTRY_URL }}/${{ secrets.REGISTRY_USERNAME }}/${{ secrets.REGISTRY_REPOSITORY_NAME }} . && docker push ${{ secrets.REGISTRY_URL }}/${{ secrets.REGISTRY_USERNAME }}/${{ secrets.REGISTRY_REPOSITORY_NAME }}
+
+  redeploy:
+    name: Redeploy
+    # if: github.ref == 'refs/heads/master'
+    needs: dockerize
+    runs-on: ubuntu-latest
+    steps:
+      - name: Redeploy webhook
+        uses: joelwmale/webhook-action@master
+        with:
+          url: ${{ secrets.DEPLOY_WEBHOOK_URL }}
