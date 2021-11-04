@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x19\x65xport_microservice.proto\x12\x02pb\"H\n\x07\x45xports\x1a\x1d\n\nGetRequest\x12\x0f\n\x07message\x18\x01 \x01(\t\x1a\x1e\n\x0bGetResponse\x12\x0f\n\x07message\x18\x02 \x01(\t2W\n\x17\x41nalyticsExportService1\x12<\n\x07GetMark\x12\x16.pb.Exports.GetRequest\x1a\x17.pb.Exports.GetResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x19\x65xport_microservice.proto\x12\x02pb\"H\n\x07\x45xports\x1a\x1d\n\nGetRequest\x12\x0f\n\x07message\x18\x01 \x01(\t\x1a\x1e\n\x0bGetResponse\x12\x0f\n\x07message\x18\x02 \x01(\t2X\n\x16\x41nalyticsExportService\x12>\n\tGetExport\x12\x16.pb.Exports.GetRequest\x1a\x17.pb.Exports.GetResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -141,19 +141,19 @@ _sym_db.RegisterMessage(Exports.GetResponse)
 
 
 
-_ANALYTICSEXPORTSERVICE1 = _descriptor.ServiceDescriptor(
-  name='AnalyticsExportService1',
-  full_name='pb.AnalyticsExportService1',
+_ANALYTICSEXPORTSERVICE = _descriptor.ServiceDescriptor(
+  name='AnalyticsExportService',
+  full_name='pb.AnalyticsExportService',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
   serialized_start=107,
-  serialized_end=194,
+  serialized_end=195,
   methods=[
   _descriptor.MethodDescriptor(
-    name='GetMark',
-    full_name='pb.AnalyticsExportService1.GetMark',
+    name='GetExport',
+    full_name='pb.AnalyticsExportService.GetExport',
     index=0,
     containing_service=None,
     input_type=_EXPORTS_GETREQUEST,
@@ -162,8 +162,8 @@ _ANALYTICSEXPORTSERVICE1 = _descriptor.ServiceDescriptor(
     create_key=_descriptor._internal_create_key,
   ),
 ])
-_sym_db.RegisterServiceDescriptor(_ANALYTICSEXPORTSERVICE1)
+_sym_db.RegisterServiceDescriptor(_ANALYTICSEXPORTSERVICE)
 
-DESCRIPTOR.services_by_name['AnalyticsExportService1'] = _ANALYTICSEXPORTSERVICE1
+DESCRIPTOR.services_by_name['AnalyticsExportService'] = _ANALYTICSEXPORTSERVICE
 
 # @@protoc_insertion_point(module_scope)

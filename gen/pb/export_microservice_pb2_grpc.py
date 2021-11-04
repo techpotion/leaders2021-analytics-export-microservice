@@ -5,7 +5,7 @@ import grpc
 import gen.pb.export_microservice_pb2 as export__microservice__pb2
 
 
-class AnalyticsExportService1Stub(object):
+class AnalyticsExportServiceStub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -14,42 +14,42 @@ class AnalyticsExportService1Stub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.GetMark = channel.unary_unary(
-                '/pb.AnalyticsExportService1/GetMark',
+        self.GetExport = channel.unary_unary(
+                '/pb.AnalyticsExportService/GetExport',
                 request_serializer=export__microservice__pb2.Exports.GetRequest.SerializeToString,
                 response_deserializer=export__microservice__pb2.Exports.GetResponse.FromString,
                 )
 
 
-class AnalyticsExportService1Servicer(object):
+class AnalyticsExportServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def GetMark(self, request, context):
+    def GetExport(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_AnalyticsExportService1Servicer_to_server(servicer, server):
+def add_AnalyticsExportServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'GetMark': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetMark,
+            'GetExport': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetExport,
                     request_deserializer=export__microservice__pb2.Exports.GetRequest.FromString,
                     response_serializer=export__microservice__pb2.Exports.GetResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'pb.AnalyticsExportService1', rpc_method_handlers)
+            'pb.AnalyticsExportService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
  # This class is part of an EXPERIMENTAL API.
-class AnalyticsExportService1(object):
+class AnalyticsExportService(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def GetMark(request,
+    def GetExport(request,
             target,
             options=(),
             channel_credentials=None,
@@ -59,7 +59,7 @@ class AnalyticsExportService1(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/pb.AnalyticsExportService1/GetMark',
+        return grpc.experimental.unary_unary(request, target, '/pb.AnalyticsExportService/GetExport',
             export__microservice__pb2.Exports.GetRequest.SerializeToString,
             export__microservice__pb2.Exports.GetResponse.FromString,
             options, channel_credentials,

@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package pb;
 
-service AnalyticsExportService1 {
-    rpc GetMark(Exports.GetRequest) returns (Exports.GetResponse) {}
+service AnalyticsExportService {
+    rpc GetExport(Exports.GetRequest) returns (Exports.GetResponse) {}
 }
 
 message Exports {
