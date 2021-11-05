@@ -1,6 +1,6 @@
 import pandas as pd
 import gen.pb.export_microservice_pb2 as pb2
-from pprint import pprint
+from UliPlot.XLSX import auto_adjust_xlsx_column_width
 import time
 import os
 
@@ -48,9 +48,14 @@ class Exporter:
     def __dfs_to_xlsx(self, output: str, df_kinds, df_area_types, df_basic, df_basic_per_100k) -> None:
         with pd.ExcelWriter(output) as writer:
             df_basic.to_excel(writer, sheet_name='Аналитика', index=False)
+            auto_adjust_xlsx_column_width(df_basic, writer, sheet_name="Аналитика", margin=0)
             df_basic_per_100k.to_excel(writer, sheet_name='Аналитика на 100 тыс. чел', index=False)
+            auto_adjust_xlsx_column_width(df_basic_per_100k, writer, sheet_name="Аналитика на 100 тыс. чел", margin=0)
             df_area_types.to_excel(writer, sheet_name='Виды спорт. услуг', index=False)
+            auto_adjust_xlsx_column_width(df_area_types, writer, sheet_name="Виды спорт. услуг", margin=0)
             df_kinds.to_excel(writer, sheet_name='Виды спорта', index=False)
+            auto_adjust_xlsx_column_width(df_kinds, writer, sheet_name="Виды спорта", margin=0)
+
 
     def to_xlsx(self, request: dict) -> str:
         basic = request['basicAnalytics']
