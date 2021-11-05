@@ -6,7 +6,10 @@ import os
 
 class Exporter:
     def __init__(self):
-        pass
+        try:
+            os.mkdir('export')
+        except:
+            pass
 
     def __get_kinds_df(self, basic: dict) -> pd.DataFrame:
         df_kinds = pd.DataFrame(columns=['Виды спорта', ])
