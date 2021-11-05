@@ -1,6 +1,8 @@
 import pandas as pd
 import gen.pb.export_microservice_pb2 as pb2
 from pprint import pprint
+import time
+import os
 
 class Exporter:
     def __init__(self):
@@ -54,7 +56,7 @@ class Exporter:
         df_basic = self.__get_basic_df(basic)
         df_basic_per_100k = self.__get_basic_per_100k(basic)
 
-        output_name = 'export/output.xlsx'
+        output_name = f'export/output-{int(time.time())}.xlsx'
         self.__dfs_to_xlsx(output_name, df_kinds, df_area_types, df_basic, df_basic_per_100k)
 
         return output_name
@@ -62,4 +64,6 @@ class Exporter:
     def file_to_bytes(self, filepath: str) -> bytes:
         with open(filepath, 'rb') as content_file:
             content = content_file.read()
+        content_file.close()
+        os.remove(filepath)
         return content
