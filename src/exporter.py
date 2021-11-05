@@ -48,13 +48,13 @@ class Exporter:
     def __dfs_to_xlsx(self, output: str, df_kinds, df_area_types, df_basic, df_basic_per_100k) -> None:
         with pd.ExcelWriter(output) as writer:
             df_basic.to_excel(writer, sheet_name='Аналитика', index=False)
-            auto_adjust_xlsx_column_width(df_basic, writer, sheet_name="Аналитика", margin=0)
+            auto_adjust_xlsx_column_width(df_basic, writer, sheet_name="Аналитика", margin=20)
             df_basic_per_100k.to_excel(writer, sheet_name='Аналитика на 100 тыс. чел', index=False)
-            auto_adjust_xlsx_column_width(df_basic_per_100k, writer, sheet_name="Аналитика на 100 тыс. чел", margin=0)
+            auto_adjust_xlsx_column_width(df_basic_per_100k, writer, sheet_name="Аналитика на 100 тыс. чел", margin=30)
             df_area_types.to_excel(writer, sheet_name='Виды спорт. услуг', index=False)
-            auto_adjust_xlsx_column_width(df_area_types, writer, sheet_name="Виды спорт. услуг", margin=0)
+            auto_adjust_xlsx_column_width(df_area_types, writer, sheet_name="Виды спорт. услуг", margin=20)
             df_kinds.to_excel(writer, sheet_name='Виды спорта', index=False)
-            auto_adjust_xlsx_column_width(df_kinds, writer, sheet_name="Виды спорта", margin=0)
+            auto_adjust_xlsx_column_width(df_kinds, writer, sheet_name="Виды спорта", margin=20)
 
 
     def to_xlsx(self, request: dict) -> str:
@@ -73,5 +73,5 @@ class Exporter:
         with open(filepath, 'rb') as content_file:
             content = content_file.read()
         content_file.close()
-        os.remove(filepath)
+        # os.remove(filepath)
         return content
