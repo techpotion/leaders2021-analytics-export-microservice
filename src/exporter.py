@@ -47,12 +47,15 @@ class Exporter:
             df_area_types.to_excel(writer, sheet_name='Виды спорт. услуг', index=False)
             df_kinds.to_excel(writer, sheet_name='Виды спорта', index=False)
 
-    def to_xlsx(self, request: dict):
+    def to_xlsx(self, request: dict) -> str:
         basic = request['basicAnalytics']
         df_kinds = self.__get_kinds_df(basic)
         df_area_types = self.__get_area_types_df(basic)
         df_basic = self.__get_basic_df(basic)
         df_basic_per_100k = self.__get_basic_per_100k(basic)
 
-        self.__dfs_to_xlsx('export/output.xlsx', df_kinds, df_area_types, df_basic, df_basic_per_100k)
+        output_name = 'export/output.xlsx'
+        self.__dfs_to_xlsx(output_name, df_kinds, df_area_types, df_basic, df_basic_per_100k)
+
+        return output_name
 
