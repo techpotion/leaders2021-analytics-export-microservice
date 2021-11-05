@@ -8,10 +8,89 @@ service AnalyticsExportService {
 
 message Exports {
     message GetRequest {
-        string message = 1;
+        PolygonAnalytics.Response basicAnalytics = 1;
+        PolygonParkAnalytics.Response parkAnalytics = 2;
+        PolygonPollutionAnalytics.Response pollutionAnalytics = 3;
+        PolygonSubwayAnalytics.Response subwayAnalytics = 4;
+        float mark = 5;
     }
 
     message GetResponse {
-        string message = 2;
+        bytes data = 1;
     }
+}
+
+message PolygonAnalytics {
+    message Response {
+        double areasSquare = 1;
+        double areasSquarePer100k = 2;
+        uint32 areasAmount = 3;
+        double areasAmountPer100k = 4;
+        uint32 sportsAmount = 5;
+        double sportsAmountPer100k = 6;
+        repeated string sportsKinds = 7;
+        repeated string areaTypes = 8;
+        uint32 areaTypesAmount = 9;
+        uint32 sportsObjectsAmount = 10;
+        double sportsObjectsAmountPer100k = 11;
+        double density = 12;
+    }
+}
+
+message PolygonParkAnalytics {
+    message Response {
+        repeated Park parks = 1;
+        ListStats listStats = 2;
+    }
+}
+
+message PolygonPollutionAnalytics {
+    message Response {
+        repeated Pollution points = 1;
+        float pollutionPercentage = 2;
+        ListStats listStats = 3;
+    }
+}
+
+message PolygonSubwayAnalytics {
+    message Response {
+        repeated Subway points = 1;
+        ListStats listStats = 2;
+    }
+}
+
+message Subway {
+    string name = 1;
+    string lineColor = 2;
+    Point point = 3;
+    double distanceFromPolygon = 4; // optional
+}
+
+
+message ListStats {
+    uint32 count = 1;
+}
+
+message Park {
+    string commonName = 1;
+    string admArea = 2;
+    string district = 3;
+    string location = 4;
+    bool hasSportground = 5;
+    Point objectPoint = 6;
+    double square = 7;
+}
+
+message Pollution {
+    string admArea = 1;
+    string district = 2;
+    string location = 3;
+    bool isPolluted = 4;
+    Point objectPoint = 5;
+    string results = 6;
+}
+
+message Point {
+    float lat = 1;
+    float lng = 2;
 }

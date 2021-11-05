@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <basicAnalytics>
+      <areaTypes>
+         <element>городок тренажерный (воркаут) нового типа</element>
+         <element>универсальная спортивная площадка</element>
+         <element>зал спортивный</element>
+         <element>дорожка легкоатлетическая</element>
+         <element>городок тренажерный универсальный</element>
+         <element>полоса препятствий</element>
+         <element>площадка для игры в настольный теннис</element>
+         <element>городок тренажерный (воркаут) старого типа</element>
+         <element>автодром учебный</element>
+         <element>площадка детская игровая учреждения Департамента образования</element>
+         <element>фонтан</element>
+         <element>зал тренажерный</element>
+         <element>бассейн плавательный 25-ти метровый крытый</element>
+         <element>каток с натуральным льдом</element>
+         <element>зона отдыха у воды</element>
+         <element>ледяная горка</element>
+         <element>бассейн плавательный площадью более 60-ти кв.м крытый</element>
+         <element>площадка детская игровая в парке</element>
+         <element>место катания на лошадях</element>
+         <element>трасса лыжная</element>
+         <element>каток с искусственным льдом</element>
+         <element>роллердром, скейтпарк открытый</element>
+         <element>площадка для игры в футбол</element>
+         <element>прокат спортивного инвентаря (отдельно стоящий)</element>
+         <element>эстрада, сцена открытая</element>
+         <element>стрелковый тир крытый</element>
+         <element>теннисный корт</element>
+         <element>ледяная горка на дворовой территории</element>
+         <element>бассейн плавательный площадью менее 60-ти кв.м крытый</element>
+         <element>снежная горка на дворовой территории</element>
+         <element>площадка для игры в баскетбол</element>
+      </areaTypes>
+      <areaTypesAmount>31</areaTypesAmount>
+      <areasAmount>555</areasAmount>
+      <areasAmountPer100k>17.504261</areasAmountPer100k>
+      <areasSquare>209326.3</areasSquare>
+      <areasSquarePer100k>118196.836</areasSquarePer100k>
+      <density>10914.02</density>
+      <sportsAmount>59</sportsAmount>
+      <sportsAmountPer100k>33.31456</sportsAmountPer100k>
+      <sportsKinds>
+         <element>Общая физическая подготовка</element>
+         <element>Воркаут</element>
+         <element>Футбол</element>
+         <element>Баскетбол</element>
+         <element>Бокс</element>
+         <element>Настольный теннис</element>
+         <element>Волейбол</element>
+         <element>Легкая атлетика</element>
+         <element>Танцевальный спорт</element>
+         <element>Шахматы</element>
+         <element>Гандбол</element>
+         <element>Теннис</element>
+         <element>Акробатический рок-н-ролл</element>
+         <element>Обучение правилам дорожного движения</element>
+         <element>Развивающие игры для детей</element>
+         <element>Оздоровительный бег</element>
+         <element>Катание на коньках</element>
+         <element>Кикбоксинг</element>
+         <element>Семейный отдых</element>
+         <element>Спортивная гимнастика</element>
+         <element>Капоэйра</element>
+         <element>Пауэрлифтинг</element>
+         <element>Фитнес-аэробика</element>
+         <element>Армрестлинг</element>
+         <element>Каратэ</element>
+         <element>Тяжелая атлетика</element>
+         <element>Плавание</element>
+         <element>Бодибилдинг</element>
+         <element>Спортивная акробатика</element>
+         <element>Прыжки на батуте</element>
+         <element>Фигурное катание на коньках</element>
+         <element>Отдых у воды</element>
+         <element>Йога</element>
+         <element>Дартс</element>
+         <element>Катание с горки</element>
+         <element>Аквааэробика</element>
+         <element>Водное поло</element>
+         <element>Самбо</element>
+         <element>Ритмическая гимнастика</element>
+         <element>Автомодельный спорт</element>
+         <element>Катание на лошадях</element>
+         <element>Ушу</element>
+         <element>Хоккей</element>
+         <element>Отдых на природе</element>
+         <element>Лыжные гонки</element>
+         <element>Катание на тюбингах</element>
+         <element>Роллер спорт</element>
+         <element>Посещение, выступление (комплексные мероприятия)</element>
+         <element>Прокат оборудования и спортинвентаря</element>
+         <element>Стрельба из лука</element>
+         <element>Стрельба из арбалета</element>
+         <element>Пулевая стрельба</element>
+         <element>Практическая стрельба</element>
+         <element>Мини-гольф</element>
+         <element>Оздоровительная гимнастика</element>
+         <element>Футбольный фристайл</element>
+         <element>Катание на санках</element>
+         <element>Бадминтон</element>
+         <element>Дзюдо</element>
+      </sportsKinds>
+      <sportsObjectsAmount>137</sportsObjectsAmount>
+      <sportsObjectsAmountPer100k>77.35754</sportsObjectsAmountPer100k>
+   </basicAnalytics>
+   <mark>9.1</mark>
+   <parkAnalytics>
+      <listStats>
+         <count>34</count>
+      </listStats>
+      <parks>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Московский Зоопарк</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Большая Грузинская улица, дом 1</location>
+            <objectPoint>
+               <lat>55.76327</lat>
+               <lng>37.578175</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Озелененный участок у метро Краснопресненская</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>ул Заморенова</location>
+            <objectPoint>
+               <lat>55.759167</lat>
+               <lng>37.577446</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Тихий уголок</commonName>
+            <district>район Арбат</district>
+            <hasSportground>false</hasSportground>
+            <location>Первый Смоленский переулок 22</location>
+            <objectPoint>
+               <lat>55.749786</lat>
+               <lng>37.580242</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Северный административный округ</admArea>
+            <commonName>Сквер у ипподрома</commonName>
+            <district>район Беговой</district>
+            <hasSportground>false</hasSportground>
+            <location>Беговая улица, 22</location>
+            <objectPoint>
+               <lat>55.778954</lat>
+               <lng>37.55798</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Патриаршие пруды, сквер</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Большой Патриарший переулок</location>
+            <objectPoint>
+               <lat>55.76388</lat>
+               <lng>37.59214</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер 1905 года</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>пересечение улицы 1905 года улицы Трехгорный Вал и Шмитовский проезд</location>
+            <objectPoint>
+               <lat>55.760757</lat>
+               <lng>37.56007</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер на Большой Садовой у домов 6-8</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Большая Садовая ул д 6-8</location>
+            <objectPoint>
+               <lat>55.766174</lat>
+               <lng>37.592796</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Северный административный округ</admArea>
+            <commonName>Московская аллея</commonName>
+            <district>район Аэропорт</district>
+            <hasSportground>false</hasSportground>
+            <location>Московская аллея</location>
+            <objectPoint>
+               <lat>55.78755</lat>
+               <lng>37.563393</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер Кудринской площади</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Кудринская площадь д 1</location>
+            <objectPoint>
+               <lat>55.758766</lat>
+               <lng>37.58279</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Георгиевский сквер</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>улица Большая Грузинская, 25</location>
+            <objectPoint>
+               <lat>55.765865</lat>
+               <lng>37.577625</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер у Дома актера</commonName>
+            <district>район Арбат</district>
+            <hasSportground>false</hasSportground>
+            <location>улица Поварская 33</location>
+            <objectPoint>
+               <lat>55.75733</lat>
+               <lng>37.586266</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер на Красногвардейском бульваре у дома 1 у бензоколонки</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Красногвардейский бульвар д 1</location>
+            <objectPoint>
+               <lat>55.758263</lat>
+               <lng>37.543587</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Мантулинская ул</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Шмитовский проезд 19 с 1</location>
+            <objectPoint>
+               <lat>55.75691</lat>
+               <lng>37.547436</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер по Смоленской площади</commonName>
+            <district>район Арбат</district>
+            <hasSportground>false</hasSportground>
+            <location>Смоленская площадь 5</location>
+            <objectPoint>
+               <lat>55.748734</lat>
+               <lng>37.581535</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Озелененный участок у станции метро 1905 года</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>ул 1905 года</location>
+            <objectPoint>
+               <lat>55.76371</lat>
+               <lng>37.563126</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер у районной Управы</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Шмитовский пр-д д 2</location>
+            <objectPoint>
+               <lat>55.7594</lat>
+               <lng>37.557568</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер по ул Подвойского</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>ул Подвойского</location>
+            <objectPoint>
+               <lat>55.758812</lat>
+               <lng>37.5349</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>1905 года улица</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>улица 1905 года</location>
+            <objectPoint>
+               <lat>55.768715</lat>
+               <lng>37.556236</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Озелененная территория от Большой Грузинской до Зоологической улицы</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Озелененная территория от Большой Грузинской до Зоологической улицы</location>
+            <objectPoint>
+               <lat>55.766106</lat>
+               <lng>37.580734</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер на Тишинской площади</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Тишинская пл</location>
+            <objectPoint>
+               <lat>55.770203</lat>
+               <lng>37.58297</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер по Большой Грузинской улице</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Б Грузинская д 20</location>
+            <objectPoint>
+               <lat>55.765495</lat>
+               <lng>37.579468</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер на улице Большая Садовая, у дома 5</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>Б Садовая д 5</location>
+            <objectPoint>
+               <lat>55.76823</lat>
+               <lng>37.592106</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер у памятника Мост памяти 1905 года</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>улица 1905 года, улица Трехгорный вал, Шмитовский проезд</location>
+            <objectPoint>
+               <lat>55.755627</lat>
+               <lng>37.576103</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер на ул.Чаянова</commonName>
+            <district>Тверской район</district>
+            <hasSportground>false</hasSportground>
+            <location>улица Чаянова, Миусская площадь, дом 2</location>
+            <objectPoint>
+               <lat>55.775085</lat>
+               <lng>37.593185</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Триумфальная площадь</commonName>
+            <district>Тверской район</district>
+            <hasSportground>false</hasSportground>
+            <location>1-я Брестская улица</location>
+            <objectPoint>
+               <lat>55.76968</lat>
+               <lng>37.595158</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сад «Аквариум»</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>улица Большая Садовая, владение 16</location>
+            <objectPoint>
+               <lat>55.767693</lat>
+               <lng>37.595364</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Садово-Триумфальный сквер</commonName>
+            <district>Тверской район</district>
+            <hasSportground>false</hasSportground>
+            <location>Садовая-Триумфальная улица, дом 10/13</location>
+            <objectPoint>
+               <lat>55.77168</lat>
+               <lng>37.60064</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Западный административный округ</admArea>
+            <commonName>Парк Украинский бульвар у гостиницы Украина</commonName>
+            <district>район Дорогомилово</district>
+            <hasSportground>false</hasSportground>
+            <location>Между домами 2/1 и 4/2 по Кутузовскому проспекту</location>
+            <objectPoint>
+               <lat>55.750973</lat>
+               <lng>37.562954</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Объект озеленения Сквер по Новинскому бульвару, дом 28</commonName>
+            <district>район Арбат</district>
+            <hasSportground>false</hasSportground>
+            <location>Новинский бульвар, 28/35с1А</location>
+            <objectPoint>
+               <lat>55.756912</lat>
+               <lng>37.585228</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Западный административный округ</admArea>
+            <commonName>Сквер у жилого комплекса гостиницы «Украина»</commonName>
+            <district>район Дорогомилово</district>
+            <hasSportground>false</hasSportground>
+            <location>набережная Тараса Шевченко</location>
+            <objectPoint>
+               <lat>55.752136</lat>
+               <lng>37.563377</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Западный административный округ</admArea>
+            <commonName>Набережная Т.Шевченко</commonName>
+            <district>район Дорогомилово</district>
+            <hasSportground>false</hasSportground>
+            <location>Набережная Тараса Шевченко</location>
+            <objectPoint>
+               <lat>55.749577</lat>
+               <lng>37.552124</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Западный административный округ</admArea>
+            <commonName>Сквер набережная Тараса Шевченко (туалет)</commonName>
+            <district>район Дорогомилово</district>
+            <hasSportground>false</hasSportground>
+            <location>пересечение Украинского бульвара и набережной Тараса Шевченко</location>
+            <objectPoint>
+               <lat>55.75204</lat>
+               <lng>37.561867</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Северный административный округ</admArea>
+            <commonName>сквер у Ваганьковского моста</commonName>
+            <district>район Беговой</district>
+            <hasSportground>false</hasSportground>
+            <location>Улица Беговая дом 2</location>
+            <objectPoint>
+               <lat>55.774326</lat>
+               <lng>37.55982</lng>
+            </objectPoint>
+         </element>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <commonName>Сквер по Пресненскому Валу</commonName>
+            <district>Пресненский район</district>
+            <hasSportground>false</hasSportground>
+            <location>дворовая территория</location>
+            <objectPoint>
+               <lat>55.766552</lat>
+               <lng>37.565037</lng>
+            </objectPoint>
+         </element>
+      </parks>
+   </parkAnalytics>
+   <pollutionAnalytics>
+      <listStats>
+         <count>1</count>
+      </listStats>
+      <points>
+         <element>
+            <admArea>Центральный административный округ</admArea>
+            <district>район Арбат</district>
+            <isPolluted>true</isPolluted>
+            <location>Новинский бульвар, дом 15</location>
+            <objectPoint>
+               <lat>55.75462</lat>
+               <lng>37.582684</lng>
+            </objectPoint>
+            <results>Зафиксированы повышенные среднесуточные концентрации отдельных загрязняющих веществ в атмосферном воздухе в контрольных точках со стороны автотрассы.</results>
+         </element>
+      </points>
+      <pollutionPercentage>0.016666668</pollutionPercentage>
+   </pollutionAnalytics>
+   <subwayAnalytics>
+      <listStats>
+         <count>5</count>
+      </listStats>
+      <points>
+         <element>
+            <distanceFromPolygon>0</distanceFromPolygon>
+            <lineColor>#2dbe2c</lineColor>
+            <name>Белорусская (ЗМЛ)</name>
+            <point>
+               <lat>55.777332</lat>
+               <lng>37.58222</lng>
+            </point>
+         </element>
+         <element>
+            <distanceFromPolygon>0</distanceFromPolygon>
+            <lineColor>#800080</lineColor>
+            <name>Беговая</name>
+            <point>
+               <lat>55.773552</lat>
+               <lng>37.546616</lng>
+            </point>
+         </element>
+         <element>
+            <distanceFromPolygon>0</distanceFromPolygon>
+            <lineColor>#00bfff</lineColor>
+            <name>Смоленская (ФЛ)</name>
+            <point>
+               <lat>55.748837</lat>
+               <lng>37.582222</lng>
+            </point>
+         </element>
+         <element>
+            <distanceFromPolygon>0</distanceFromPolygon>
+            <lineColor>#2dbe2c</lineColor>
+            <name>Маяковская</name>
+            <point>
+               <lat>55.769886</lat>
+               <lng>37.595924</lng>
+            </point>
+         </element>
+         <element>
+            <distanceFromPolygon>0</distanceFromPolygon>
+            <lineColor>#8d5b2d</lineColor>
+            <name>Белорусская (КЛ)</name>
+            <point>
+               <lat>55.776707</lat>
+               <lng>37.585308</lng>
+            </point>
+         </element>
+      </points>
+   </subwayAnalytics>
+</root>
