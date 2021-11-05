@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x19\x65xport_microservice.proto\x12\x02pb\"\xb7\x02\n\x07\x45xports\x1a\x8d\x02\n\nGetRequest\x12\x35\n\x0e\x62\x61sicAnalytics\x18\x01 \x01(\x0b\x32\x1d.pb.PolygonAnalytics.Response\x12\x38\n\rparkAnalytics\x18\x02 \x01(\x0b\x32!.pb.PolygonParkAnalytics.Response\x12\x42\n\x12pollutionAnalytics\x18\x03 \x01(\x0b\x32&.pb.PolygonPollutionAnalytics.Response\x12<\n\x0fsubwayAnalytics\x18\x04 \x01(\x0b\x32#.pb.PolygonSubwayAnalytics.Response\x12\x0c\n\x04mark\x18\x05 \x01(\x02\x1a\x1c\n\x0bGetResponse\x12\r\n\x05\x63hunk\x18\x01 \x01(\x0c\"\xc7\x02\n\x10PolygonAnalytics\x1a\xb2\x02\n\x08Response\x12\x13\n\x0b\x61reasSquare\x18\x01 \x01(\x01\x12\x1a\n\x12\x61reasSquarePer100k\x18\x02 \x01(\x01\x12\x13\n\x0b\x61reasAmount\x18\x03 \x01(\r\x12\x1a\n\x12\x61reasAmountPer100k\x18\x04 \x01(\x01\x12\x14\n\x0csportsAmount\x18\x05 \x01(\r\x12\x1b\n\x13sportsAmountPer100k\x18\x06 \x01(\x01\x12\x13\n\x0bsportsKinds\x18\x07 \x03(\t\x12\x11\n\tareaTypes\x18\x08 \x03(\t\x12\x17\n\x0f\x61reaTypesAmount\x18\t \x01(\r\x12\x1b\n\x13sportsObjectsAmount\x18\n \x01(\r\x12\"\n\x1asportsObjectsAmountPer100k\x18\x0b \x01(\x01\x12\x0f\n\x07\x64\x65nsity\x18\x0c \x01(\x01\"]\n\x14PolygonParkAnalytics\x1a\x45\n\x08Response\x12\x17\n\x05parks\x18\x01 \x03(\x0b\x32\x08.pb.Park\x12 \n\tlistStats\x18\x02 \x01(\x0b\x32\r.pb.ListStats\"\x85\x01\n\x19PolygonPollutionAnalytics\x1ah\n\x08Response\x12\x1d\n\x06points\x18\x01 \x03(\x0b\x32\r.pb.Pollution\x12\x1b\n\x13pollutionPercentage\x18\x02 \x01(\x02\x12 \n\tlistStats\x18\x03 \x01(\x0b\x32\r.pb.ListStats\"b\n\x16PolygonSubwayAnalytics\x1aH\n\x08Response\x12\x1a\n\x06points\x18\x01 \x03(\x0b\x32\n.pb.Subway\x12 \n\tlistStats\x18\x02 \x01(\x0b\x32\r.pb.ListStats\"`\n\x06Subway\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x11\n\tlineColor\x18\x02 \x01(\t\x12\x18\n\x05point\x18\x03 \x01(\x0b\x32\t.pb.Point\x12\x1b\n\x13\x64istanceFromPolygon\x18\x04 \x01(\x01\"\x1a\n\tListStats\x12\r\n\x05\x63ount\x18\x01 \x01(\r\"\x97\x01\n\x04Park\x12\x12\n\ncommonName\x18\x01 \x01(\t\x12\x0f\n\x07\x61\x64mArea\x18\x02 \x01(\t\x12\x10\n\x08\x64istrict\x18\x03 \x01(\t\x12\x10\n\x08location\x18\x04 \x01(\t\x12\x16\n\x0ehasSportground\x18\x05 \x01(\x08\x12\x1e\n\x0bobjectPoint\x18\x06 \x01(\x0b\x32\t.pb.Point\x12\x0e\n\x06square\x18\x07 \x01(\x01\"\x85\x01\n\tPollution\x12\x0f\n\x07\x61\x64mArea\x18\x01 \x01(\t\x12\x10\n\x08\x64istrict\x18\x02 \x01(\t\x12\x10\n\x08location\x18\x03 \x01(\t\x12\x12\n\nisPolluted\x18\x04 \x01(\x08\x12\x1e\n\x0bobjectPoint\x18\x05 \x01(\x0b\x32\t.pb.Point\x12\x0f\n\x07results\x18\x06 \x01(\t\"!\n\x05Point\x12\x0b\n\x03lat\x18\x01 \x01(\x02\x12\x0b\n\x03lng\x18\x02 \x01(\x02\x32X\n\x16\x41nalyticsExportService\x12>\n\tGetExport\x12\x16.pb.Exports.GetRequest\x1a\x17.pb.Exports.GetResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x19\x65xport_microservice.proto\x12\x02pb\"\xb6\x02\n\x07\x45xports\x1a\x8d\x02\n\nGetRequest\x12\x35\n\x0e\x62\x61sicAnalytics\x18\x01 \x01(\x0b\x32\x1d.pb.PolygonAnalytics.Response\x12\x38\n\rparkAnalytics\x18\x02 \x01(\x0b\x32!.pb.PolygonParkAnalytics.Response\x12\x42\n\x12pollutionAnalytics\x18\x03 \x01(\x0b\x32&.pb.PolygonPollutionAnalytics.Response\x12<\n\x0fsubwayAnalytics\x18\x04 \x01(\x0b\x32#.pb.PolygonSubwayAnalytics.Response\x12\x0c\n\x04mark\x18\x05 \x01(\x02\x1a\x1b\n\x0bGetResponse\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c\"\xc7\x02\n\x10PolygonAnalytics\x1a\xb2\x02\n\x08Response\x12\x13\n\x0b\x61reasSquare\x18\x01 \x01(\x01\x12\x1a\n\x12\x61reasSquarePer100k\x18\x02 \x01(\x01\x12\x13\n\x0b\x61reasAmount\x18\x03 \x01(\r\x12\x1a\n\x12\x61reasAmountPer100k\x18\x04 \x01(\x01\x12\x14\n\x0csportsAmount\x18\x05 \x01(\r\x12\x1b\n\x13sportsAmountPer100k\x18\x06 \x01(\x01\x12\x13\n\x0bsportsKinds\x18\x07 \x03(\t\x12\x11\n\tareaTypes\x18\x08 \x03(\t\x12\x17\n\x0f\x61reaTypesAmount\x18\t \x01(\r\x12\x1b\n\x13sportsObjectsAmount\x18\n \x01(\r\x12\"\n\x1asportsObjectsAmountPer100k\x18\x0b \x01(\x01\x12\x0f\n\x07\x64\x65nsity\x18\x0c \x01(\x01\"]\n\x14PolygonParkAnalytics\x1a\x45\n\x08Response\x12\x17\n\x05parks\x18\x01 \x03(\x0b\x32\x08.pb.Park\x12 \n\tlistStats\x18\x02 \x01(\x0b\x32\r.pb.ListStats\"\x85\x01\n\x19PolygonPollutionAnalytics\x1ah\n\x08Response\x12\x1d\n\x06points\x18\x01 \x03(\x0b\x32\r.pb.Pollution\x12\x1b\n\x13pollutionPercentage\x18\x02 \x01(\x02\x12 \n\tlistStats\x18\x03 \x01(\x0b\x32\r.pb.ListStats\"b\n\x16PolygonSubwayAnalytics\x1aH\n\x08Response\x12\x1a\n\x06points\x18\x01 \x03(\x0b\x32\n.pb.Subway\x12 \n\tlistStats\x18\x02 \x01(\x0b\x32\r.pb.ListStats\"`\n\x06Subway\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x11\n\tlineColor\x18\x02 \x01(\t\x12\x18\n\x05point\x18\x03 \x01(\x0b\x32\t.pb.Point\x12\x1b\n\x13\x64istanceFromPolygon\x18\x04 \x01(\x01\"\x1a\n\tListStats\x12\r\n\x05\x63ount\x18\x01 \x01(\r\"\x97\x01\n\x04Park\x12\x12\n\ncommonName\x18\x01 \x01(\t\x12\x0f\n\x07\x61\x64mArea\x18\x02 \x01(\t\x12\x10\n\x08\x64istrict\x18\x03 \x01(\t\x12\x10\n\x08location\x18\x04 \x01(\t\x12\x16\n\x0ehasSportground\x18\x05 \x01(\x08\x12\x1e\n\x0bobjectPoint\x18\x06 \x01(\x0b\x32\t.pb.Point\x12\x0e\n\x06square\x18\x07 \x01(\x01\"\x85\x01\n\tPollution\x12\x0f\n\x07\x61\x64mArea\x18\x01 \x01(\t\x12\x10\n\x08\x64istrict\x18\x02 \x01(\t\x12\x10\n\x08location\x18\x03 \x01(\t\x12\x12\n\nisPolluted\x18\x04 \x01(\x08\x12\x1e\n\x0bobjectPoint\x18\x05 \x01(\x0b\x32\t.pb.Point\x12\x0f\n\x07results\x18\x06 \x01(\t\"!\n\x05Point\x12\x0b\n\x03lat\x18\x01 \x01(\x02\x12\x0b\n\x03lng\x18\x02 \x01(\x02\x32X\n\x16\x41nalyticsExportService\x12>\n\tGetExport\x12\x16.pb.Exports.GetRequest\x1a\x17.pb.Exports.GetResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -93,7 +93,7 @@ _EXPORTS_GETRESPONSE = _descriptor.Descriptor(
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='chunk', full_name='pb.Exports.GetResponse.chunk', index=0,
+      name='data', full_name='pb.Exports.GetResponse.data', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
@@ -112,7 +112,7 @@ _EXPORTS_GETRESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=317,
-  serialized_end=345,
+  serialized_end=344,
 )
 
 _EXPORTS = _descriptor.Descriptor(
@@ -136,7 +136,7 @@ _EXPORTS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=34,
-  serialized_end=345,
+  serialized_end=344,
 )
 
 
@@ -244,8 +244,8 @@ _POLYGONANALYTICS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=369,
-  serialized_end=675,
+  serialized_start=368,
+  serialized_end=674,
 )
 
 _POLYGONANALYTICS = _descriptor.Descriptor(
@@ -268,8 +268,8 @@ _POLYGONANALYTICS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=348,
-  serialized_end=675,
+  serialized_start=347,
+  serialized_end=674,
 )
 
 
@@ -307,8 +307,8 @@ _POLYGONPARKANALYTICS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=701,
-  serialized_end=770,
+  serialized_start=700,
+  serialized_end=769,
 )
 
 _POLYGONPARKANALYTICS = _descriptor.Descriptor(
@@ -331,8 +331,8 @@ _POLYGONPARKANALYTICS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=677,
-  serialized_end=770,
+  serialized_start=676,
+  serialized_end=769,
 )
 
 
@@ -377,8 +377,8 @@ _POLYGONPOLLUTIONANALYTICS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=802,
-  serialized_end=906,
+  serialized_start=801,
+  serialized_end=905,
 )
 
 _POLYGONPOLLUTIONANALYTICS = _descriptor.Descriptor(
@@ -401,8 +401,8 @@ _POLYGONPOLLUTIONANALYTICS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=773,
-  serialized_end=906,
+  serialized_start=772,
+  serialized_end=905,
 )
 
 
@@ -440,8 +440,8 @@ _POLYGONSUBWAYANALYTICS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=934,
-  serialized_end=1006,
+  serialized_start=933,
+  serialized_end=1005,
 )
 
 _POLYGONSUBWAYANALYTICS = _descriptor.Descriptor(
@@ -464,8 +464,8 @@ _POLYGONSUBWAYANALYTICS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=908,
-  serialized_end=1006,
+  serialized_start=907,
+  serialized_end=1005,
 )
 
 
@@ -517,8 +517,8 @@ _SUBWAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1008,
-  serialized_end=1104,
+  serialized_start=1007,
+  serialized_end=1103,
 )
 
 
@@ -549,8 +549,8 @@ _LISTSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1106,
-  serialized_end=1132,
+  serialized_start=1105,
+  serialized_end=1131,
 )
 
 
@@ -623,8 +623,8 @@ _PARK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1135,
-  serialized_end=1286,
+  serialized_start=1134,
+  serialized_end=1285,
 )
 
 
@@ -690,8 +690,8 @@ _POLLUTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1289,
-  serialized_end=1422,
+  serialized_start=1288,
+  serialized_end=1421,
 )
 
 
@@ -729,8 +729,8 @@ _POINT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1424,
-  serialized_end=1457,
+  serialized_start=1423,
+  serialized_end=1456,
 )
 
 _EXPORTS_GETREQUEST.fields_by_name['basicAnalytics'].message_type = _POLYGONANALYTICS_RESPONSE
@@ -891,8 +891,8 @@ _ANALYTICSEXPORTSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=1459,
-  serialized_end=1547,
+  serialized_start=1458,
+  serialized_end=1546,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetExport',

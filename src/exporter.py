@@ -59,3 +59,7 @@ class Exporter:
 
         return output_name
 
+    def file_to_bytes(self, filepath: str) -> bytes:
+        with open(filepath, 'rb') as content_file:
+            content = content_file.read()
+        return content

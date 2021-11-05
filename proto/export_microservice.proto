@@ -16,7 +16,7 @@ message Exports {
     }
 
     message GetResponse {
-        bytes chunk = 1;
+        bytes data = 1;
     }
 }
 

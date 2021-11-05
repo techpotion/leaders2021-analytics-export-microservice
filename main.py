@@ -10,9 +10,10 @@ class AnalyticsExportService(pb2_grpc.AnalyticsExportServiceServicer):
         self.__exporter = Exporter()
 
     def GetExport(self, request, context):
-        self.__exporter.to_xlsx(protobuf_to_dict(request))
+        filepath = self.__exporter.to_xlsx(protobuf_to_dict(request))
+        b = self.__exporter.file_to_bytes(filepath)
         result = {
-
+            'data': b
         }
         return pb2.Exports.GetResponse(**result)
 
