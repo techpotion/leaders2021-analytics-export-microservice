@@ -2,15 +2,17 @@ import grpc
 from concurrent import futures
 import gen.pb.export_microservice_pb2 as pb2
 import gen.pb.export_microservice_pb2_grpc as pb2_grpc
+from protobuf_to_dict import protobuf_to_dict
+from src.exporter import Exporter
 
 class AnalyticsExportService(pb2_grpc.AnalyticsExportServiceServicer):
     def __init__(self, *args, **kwargs):
-        pass
+        self.__exporter = Exporter()
 
     def GetExport(self, request, context):
-        print(request)
+        self.__exporter.to_xlsx(protobuf_to_dict(request))
         result = {
-            'message': request.message
+
         }
         return pb2.Exports.GetResponse(**result)
 
